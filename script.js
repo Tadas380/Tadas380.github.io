@@ -14,7 +14,7 @@ const PROJECTS = [
     type: 'security',
     featured: true,
     icon: '🔎',
-    live: '', // TODO: paste your Render URL
+    live: 'https://subdomain-finder-5s8z.onrender.com',
     code: 'https://github.com/Tadas380/subdomain-finder',
     tags: ['TypeScript', 'Node.js', 'DNS', 'Certificate Transparency', 'node:test'],
     en: {
@@ -98,18 +98,26 @@ const PROJECTS = [
     type: 'security',
     featured: false,
     icon: '🛡️',
-    live: '',
-    code: 'https://github.com/Tadas380/website-security-checker', // check this matches your repo name
-    tags: ['Node.js', 'Security', 'PDF reports'],
+    live: 'https://website-security-checker-o8s7.onrender.com',
+    code: 'https://github.com/Tadas380/website-security-checker',
+    tags: ['Node.js', 'TLS', 'DNS', 'SSRF protection', 'node:test'],
     en: {
       title: 'Website Security Checker',
-      desc: 'Passive website security scanner that checks a site\'s public security setup and produces a downloadable PDF report.',
-      points: ['Passive checks only', 'Readable report for non-technical owners', 'Built with Node.js'],
+      desc: 'Passive scanner that gives any website an A–F security grade, a plain-language "fix first" list and a PDF report for the owner.',
+      points: [
+        'Checks HTTPS/TLS, security headers, exposed .git/.env files, SPF/DMARC and cookies',
+        'SSRF-safe by design: blocks private and cloud-metadata IPs at connect time',
+        'PDF writer built from scratch, zero dependencies, 22 tests',
+      ],
     },
     lt: {
       title: 'Svetainės saugumo tikrintuvas',
-      desc: 'Pasyvus svetainių saugumo skeneris, kuris patikrina viešus saugumo nustatymus ir sukuria atsisiunčiamą PDF ataskaitą.',
-      points: ['Tik pasyvūs patikrinimai', 'Ataskaita suprantama ne IT žmonėms', 'Sukurta su Node.js'],
+      desc: 'Pasyvus skeneris, kuris įvertina svetainės saugumą A–F balu, pateikia aiškų „ką taisyti pirmiausia“ sąrašą ir PDF ataskaitą savininkui.',
+      points: [
+        'Tikrina HTTPS/TLS, saugumo antraštes, atvirus .git/.env failus, SPF/DMARC ir slapukus',
+        'Apsaugotas nuo SSRF: blokuoja vidinius ir debesų metaduomenų IP jungimosi metu',
+        'PDF generatorius parašytas nuo nulio, be priklausomybių, 22 testai',
+      ],
     },
   },
   {
